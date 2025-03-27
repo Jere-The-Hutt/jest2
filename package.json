@@ -1,0 +1,23 @@
+{
+  "name": "jest2",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000j\u0000e\u0000s\u0000t\u00002\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jere-The-Hutt/jest2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jere-The-Hutt/jest2/issues"
+  },
+  "homepage": "https://github.com/Jere-The-Hutt/jest2#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
