@@ -5,21 +5,22 @@ let game = {
     turnNumber: 0,
     lastButton: "",
     turnInProgress: false,
-    choices: ["button1", "button2", "button3", "button4"],
+    choices: ["button1", "button2", "button3", "button4"]
 }
 
 function newGame() {
     game.score = 0;
     game.currentGame = [];
     game.playerMoves = [];
+
     for (let circle of document.getElementsByClassName("circle")) {
         if (circle.getAttribute("data-listener") !== "true") {
             circle.addEventListener("click", (e) => {
                 if (game.currentGame.length > 0 && !game.turnInProgress) {
                     let move = e.target.getAttribute("id");
                     game.lastButton = move;
+                    game.playerMoves.push(move);
                     lightsOn(move);
-                    gamePlayerMoves.push(move);
                     playerTurn();
                 }
                 let move = e.target.getAttribute("id");
